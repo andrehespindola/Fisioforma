@@ -1,0 +1,106 @@
+<?php
+	include 'php/ponte1.php';
+
+?>
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FisioForma - Marque suas consultas de um novo jeito.</title>
+		<link rel="stylesheet" type="text/css" href="css/eletroterapia.css">
+		<link rel="icon"  href="img/fisioforma.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<header class="cabecalho">
+		<a href="index.html"> <h1 class="logo"> FisioForma - Marque suas consultas de um novo jeito.</h1></a>
+		<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul>
+				<li><a href="index2.php">Home</a></li>
+				
+				
+				
+				<li><a href="php/logout.php">SAIR</a></li>
+			</ul>
+
+		</header>
+		</nav>
+		
+		</header>
+		
+		<nav class="cadastrar">
+			<a class="btn-closes"><i class="fa fa-times"></i></a>
+
+			<form method="POST" action="php/marcandoeletroterapia.php">
+			<ul>
+				<li class="title02">Marcar consulta</li>
+				<li><a href="#"><input type="text" name="nome" placeholder="Nome completo"></a></li>
+				<li><a href="#"><input type="text" name="idade" placeholder="Idade"></a></li>
+				<li><a href="#"><input type="text" name="rg" placeholder="Rg"></a></li>
+				<li><a href="#"><input type="text" name="endereco" placeholder="Endereço"></a></li>
+				<li><a href="#"><input type="text" name="cidade" placeholder="Cidade"></a></li>
+				<li><a href="#"><input type="text" name="estado" placeholder="Sigla do estado"></a></li>
+				<li><input class="data" type="date" name="da_ta" placeholder="Data da consulta"></li>
+				<li><input class="data" type="time" name="hora" placeholder="Hora da consulta"></li>
+				<button > cadastrar </button>
+				
+			</ul>
+			</form>
+		</header>
+		</nav>
+		
+		<div class="banner"> 
+			<center><div class="title">
+
+				<h2>Eletroterapia</h2>
+				<br><br>
+				<h3>A Eletroterapia consiste no uso de correntes elétricas dentro da terapêutica. Os aparelhos de eletroterapia utilizam uma intensidade de corrente muito baixa, são miliamperes e microamperes.</h3><br>
+				<img src="img/eletroterapia2.jpg"><BR><br>
+				<h3>Os eletrodos são aplicados diretamente sobre a pele e o organismo será o condutor. Na eletroterapia temos que considerar parâmetros como: resistência, intensidade, voltagem potência e condutividade.<br><BR>
+
+Os equipamentos atuais empregam diferentes tipos de correntes, onde o aparelho emite a energia eletromagnética que é então conduzida através de cabos condutores até os eletrodos que ficam aderidos à pele do paciente. Outras formas incluem a utilização de agulhas ao invés de eletrodos, sendo este emprego mais reservado ao uso para terapia estética ou para métodos diagnósticos.<BR><BR>
+
+Existe uma diversidade de correntes que podem ser utilizadas na eletroterapia, cada qual com particularidades próprias quanto às indicações e contraindicações. Mas todas elas tem um objetivo comum: produzir algum efeito no tecido a ser tratado, que é obtido através das reações físicas, biológicas e fisiológicas que o tecido desenvolve ao ser submetido à terapia.</h3><br>
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/44jszUyJVr4" frameborder="0" allowfullscreen></iframe><br><br><br><br>
+				<input class="btncadastrar" type="button" value="Marcar Consulta">
+				<br><br><br><br>
+
+		</center>
+		</div>
+		</div>
+
+
+		 
+            
+        <footer class="rodape ">
+          	<div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+         	</div>
+          	<p class="copyright">
+            Copyright © FisioForma 2017. Todos os direitos reservados.
+        </footer>       
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js" ></script>
+		<script>
+				
+				// cadastrar
+			$(".btncadastrar").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btn-closes").click(function(){
+				$(".cadastrar").hide();
+			});
+			
+			
+		</script>
+		
+	</body>
+</html>

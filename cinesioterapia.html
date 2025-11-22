@@ -1,0 +1,115 @@
+<?php
+	include 'php/ponte1.php';
+
+?>
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FisioForma - Marque suas consultas de um novo jeito.</title>
+		<link rel="stylesheet" type="text/css" href="css/cinesioterapia.css">
+		<link rel="icon"  href="img/fisioforma.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<header class="cabecalho">
+		<a href="index.html"> <h1 class="logo"> FisioForma - Marque suas consultas de um novo jeito.</h1></a>
+		<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul>
+				<li><a href="index2.php">Home</a></li>
+				
+				
+				
+				<li><a href="php/logout.php">SAIR</a></li>
+			</ul>
+
+		</header>
+		</nav>
+		</header>
+
+		<nav class="cadastrar">
+			<a class="btn-closes"><i class="fa fa-times"></i></a>
+
+			<form method="POST" action="php/marcandocinesioterapia.php">
+			<ul>
+				<li class="title02">Marcar consulta</li>
+				<li><a href="#"><input type="text" name="nome" placeholder="Nome completo"></a></li>
+				<li><a href="#"><input type="text" name="idade" placeholder="Idade"></a></li>
+				<li><a href="#"><input type="text" name="rg" placeholder="Rg"></a></li>
+				<li><a href="#"><input type="text" name="endereco" placeholder="Endereço"></a></li>
+				<li><a href="#"><input type="text" name="cidade" placeholder="Cidade"></a></li>
+				<li><a href="#"><input type="text" name="estado" placeholder="Sigla do estado"></a></li>
+				<li><input class="data" type="date" name="da_ta" placeholder="Data da consulta"></li>
+				<li><input class="data" type="time" name="hora" placeholder="Hora da consulta"></li>
+				<button > cadastrar </button>
+				
+			</ul>
+			</form>
+		</header>
+		</nav>
+
+		<div class="banner"> 
+			<center><div class="title">
+
+				<h2>Cinesioterapia</h2>
+				<br><br>
+				<h3>Cinesioterapia é um ramo da fisioterapia que se dedica a terapia com movimentos, estes responsáveis pela reabilitação de funções motoras do corpo.
+
+Etimologicamente, cinesioterapia se originou a partir da junção das palavras gregas: kínesis, que significa “movimento”, e therapeia, que quer dizer “terapia”. Esta terapia é estudada através da cinesiologia, que significa “estudo do movimento”.</h3><br>
+				<img src="img/cinesioterapia.jpg"><BR><br>
+				<h3>Na prática, a cinesioterapia consiste na execução de movimentos ativos e passivos, de caráter terapêutico, com o intuito de encontrar todos os pontos de disfunção do corpo e aplicar a terapia adequada para cada situação.
+
+Os movimentos ativos são aqueles realizados pelo próprio paciente, enquanto que os passivos são feitos com auxílio total do terapeuta.<br>
+
+A cinesioterapia costuma ser aplicada em consonância com outras terapias, como a hidroterapia, terapias manuais e etc.<br>
+
+Entre alguns dos exercícios terapêuticos aplicados na cinesioterapia estão: alongamentos, reeducação da postura, equilíbrio corporal, coordenação motora, exercícios respiratórios, e etc.
+
+A cinesioterapia auxilia a aliviar as dores musculares, na amplitude dos movimentos do corpo, na melhoria da postura, entre outros benefícios.<br>
+
+Normalmente, esta terapia costuma ser recomendada para indivíduos com problemas neurológicos, cardíacos, respiratórios, disfunções ortopédicas e que sofreram lesões no sistema músculo-esquelético.
+
+A técnica da cinesioterapia também pode ser aplicada para a recuperação da função respiratória, através de exercícios que ajudam a melhorar o movimento de ventilação da respiração. Esta terapia é conhecida como cinesioterapia respiratória.</h3><br>
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/tE-UbJQw5aI" frameborder="0" allowfullscreen></iframe><br><br><br><br>
+				<input class="btncadastrar"  type="button" value="Marcar Consulta">
+				<br><br><br><br>
+
+		</center>
+		</div>
+		</div>
+
+
+		 
+            
+        <footer class="rodape ">
+          	<div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+         	</div>
+          	<p class="copyright">
+            Copyright © FisioForma 2017. Todos os direitos reservados.
+        </footer>       
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js" ></script>
+		<script>
+				
+				// cadastrar
+			$(".btncadastrar").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btn-closes").click(function(){
+				$(".cadastrar").hide();
+			});
+			
+			
+		</script>
+		
+	</body>
+</html>

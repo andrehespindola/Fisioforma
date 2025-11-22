@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FisioForma - Marque suas consultas de um novo jeito.</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon"  href="img/fisioforma.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	
+	<body>
+		<header class="cabecalho">
+		<a href="index.html"> <h1 class="logo"> FisioForma - Marque suas consultas de um novo jeito.</h1></a>
+		
+		<nav class="menu">
+			
+			
+
+		</header>
+		</nav>
+		<nav class="cadastrar">
+			<a class="btn-closes"><i class="fa fa-times"></i></a>
+
+			<form method="POST" action="php/cadastro.php">
+			<ul>
+				<li class="title02">Cadastre-se</li>
+				<li><a href="#"><input type="text" name="nome" placeholder="Nome completo"></a></li>
+				<li><a href="#"><input type="text" name="idade" placeholder="Idade"></a></li>
+				<li><a href="#"><input type="text" name="cpf" placeholder="CPF"></a></li>
+				<li><a href="#"><input type="text" name="telefone" placeholder="Telefone com o ddd"></a></li>
+				<li><a href="#"><input type="email" name="email" placeholder="E-mail"></a></li>
+				<li><a href="#"><input type="password" name="senha" placeholder="Senha"></a></li>
+				
+				<button > cadastrar </button>
+				
+			</ul>
+			</form>
+		</header>
+		</nav>
+		<nav class="login">
+			<a class="btn-closess"><i class="fa fa-times"></i></a>
+
+			<form method="POST" action="php/login.php">
+			<ul>
+				<li class="title02">Login</li>
+				
+				<li><a href="#"><input type="email" name="email" placeholder="Seu email"></a></li>
+				<li><a href="#"><input type="password" name="senha" placeholder="Senha"></a></li>
+				<button >Logar </button><br>
+				<p class="btnoption" >Cadastrar-se</p>
+				
+			</ul>
+			</form>
+		</header>
+		</nav>
+		<div class="banner"> 
+			<div class="title">
+				<h2>FisioForma!</h2>
+				<h3>Seja bem-vindo a FisioForma! Faça login ou cadastre-se e marque suas consultas de um novo jeito.</h3>
+			</div>
+
+			<div class="buttons">
+				<button class="btn btn-cadastrar">Cadastrar <i class="fa fa-arrow-circle-right"></i></button>
+				<button class="btn btn-sobre">Login<i class="fa fa-arrow-circle-right"></i></button>
+			</div>
+		</div>
+		<div class="maisprocurados">
+		<p>Tópicos mais procurados</p>
+		</div>
+		 <main class="servicos">
+            <article class="servico">
+              <img  src="img/eletroterapia.jpg" alt="Campanhas publicitárias">
+               <div class="inner">
+                   <a>Eletroterapia </a>
+                  
+                   <p>Terapia realizada por meio de equipamentos que fazem uso da corrente elétrica em vários parâmetros físicos (intensidade, frequência, etc.) conforme o objetivo a ser atingido. As principais acções terapêuticas incluem a analgesia, excitação neuromuscular, regeneração de tecidos vasculares, iontoforese – introdução de medicamentos e diagnósticos de condições neuromusculares e órgãos internos. São os famosos “choquinhos”: TENS(neuroestimulação eléctrica transcutânea), eletroacupuntura, correntes diadinâmicas, interferenciais, FES(Estimulação Eléctrica Funcional), etc. </p>
+               </div>
+            </article>
+            <article class="servico">
+               <img src="img/Cinesioterapia.jpg" alt="Marketing Digital">
+               <div class="inner">
+                   <a > Cinesioterapia </a>
+                   
+                   <p>Terapia realizada por meio de exercícios de alongamento e fortalecimento, mobilizações, etc, visando a movimentação. Esta é a terapia mais utilizada, sozinha ou associada a outras formas de tratamento (eletroterapia, crioterapia, mecanoterapia, etc.)Na recuperação de traumas ortopédicos e esportivos, a cinesioterapia é essencial, devido à necessidade de readquirir perfeitamente os movimentos do cotidiano e também o gesto esportivo e retornar o mais breve possível às atividades. </p>
+               </div>
+            </article>
+            <article class="servico">
+               <img src="img/hidroterapia.jpg" alt="Criação de Sites">
+               <div class="inner">
+                   <a > hidroterapia </a>
+                   
+                   <p> Terapia por meio de exercícios realizados na água (fria ou morna) com imersão parcial ou total do corpo, visando relaxamento muscular, mobilidade articular, etc.A Fisioterapia Aquática destaca-se a cada dia devido aos resultados que podem ser mensurados em pesquisas científicas e ao alto grau técnico que os profissionais reabilitadores brasileiros atingiram.Cresce também devido ao atual baixo custo de se construir piscinas e a tecnologia de aquecimento, assim como o hábito dos brasileiros de se relacionarem bem com a água usando-a em atividades lúdicas, esportivas e de lazer.</p>
+               </div>
+            </article>
+            </main>
+             
+        <footer class="rodape ">
+          	<div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+         	</div>
+          	<p class="copyright">
+            Copyright © FisioForma 2017. Todos os direitos reservados.
+        </footer>       
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js" ></script>
+		<script>
+				// menu
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+				// cadastrar
+			$(".btn-cadastrar").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btn-closes").click(function(){
+				$(".cadastrar").hide();
+			});
+				// login
+			$(".btn-sobre").click(function(){
+				$(".login").show();
+			});
+			$(".btn-closess").click(function(){
+				$(".login").hide();
+			});
+			//imagem
+			$(".servicos").click(function(){
+				$(".login").show();
+			});
+			//btnoption
+			$(".btnoption").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btnoption").click(function(){
+				$(".login").hide();
+			});
+		</script>
+	</body>
+</html>

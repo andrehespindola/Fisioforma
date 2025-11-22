@@ -1,0 +1,102 @@
+<?php
+	include 'php/ponte1.php';
+
+?>
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FisioForma - Marque suas consultas de um novo jeito.</title>
+		<link rel="stylesheet" type="text/css" href="css/fototerapia.css">
+		<link rel="icon"  href="img/fisioforma.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<header class="cabecalho">
+		<a href="index.html"> <h1 class="logo"> FisioForma - Marque suas consultas de um novo jeito.</h1></a>
+		<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul>
+				<li><a href="index2.php">Home</a></li>
+				
+				
+				
+				<li><a href="php/logout.php">SAIR</a></li>
+			</ul>
+
+		</header>
+		</nav>
+		
+		</header>
+		<nav class="cadastrar">
+			<a class="btn-closes"><i class="fa fa-times"></i></a>
+
+			<form method="POST" action="php/marcandofototerapia.php">
+			<ul>
+				<li class="title02">Marcar consulta</li>
+				<li><a href="#"><input type="text" name="nome" placeholder="Nome completo"></a></li>
+				<li><a href="#"><input type="text" name="idade" placeholder="Idade"></a></li>
+				<li><a href="#"><input type="text" name="rg" placeholder="Rg"></a></li>
+				<li><a href="#"><input type="text" name="endereco" placeholder="Endereço"></a></li>
+				<li><a href="#"><input type="text" name="cidade" placeholder="Cidade"></a></li>
+				<li><a href="#"><input type="text" name="estado" placeholder="Sigla do estado"></a></li>
+				<li><input class="data" type="date" name="da_ta" placeholder="Data da consulta"></li>
+				<li><input class="data" type="time" name="hora" placeholder="Hora da consulta"></li>
+				<button > cadastrar </button>
+				
+			</ul>
+			</form>
+		</header>
+		</nav>
+		<div class="banner"> 
+			<center><div class="title">
+
+				<h2>Fototerapia</h2>
+				<br><br>
+				<h3>A fototerapia consiste na utilização de luzes especiais como forma de tratamento, sendo muito utilizada em recém-nascidos que nascem com icterícia, um tom amarelado na pele, mas que também pode ser útil para combater rugas e manchas na pele, além de doenças como psoríase, vitiligo eczema, por exemplo.
+A fototerapia também pode ser utilizada pelos fisioterapeutas para promover o rejuvenescimento e o combate à pequenas manchas de pele que podem ser causadas pelo sol. Nas sessões são utilizadas um tipo de luz especial, a Luz Emitida por Diodo (LED) que estimula ou inibe a atividade celular.</h3><br>
+				<img src="img/fototerapia.jpg"><br><br>
+				<h3>A fototerapia é indicada para o tratamento de situações como: Hiperbilirrubinemia do recém-nascido, Linfoma cutâneo de células T, Psoríase e parapsoríase, Esclerodermia, Líquen plano, Caspa, Eczema crônico, Urticária crônica e Rejuvenescimento e eliminação de manchas da face e das mãos.<br><br>
+				Para tratar estas e outras doenças, o dermatologista poderá indicar 2 ou 3 sessões por semana. No entanto, esta técnica não deve ser utilizada durante a gravidez ou quando o aumento da bilirrubina no recém-nascido é causada por problemas nos rins ou no fígado, em caso de porfiria, albinismo, lúpus eritematoso e pênfigo. Pessoas que já tiveram câncer ou familiares próximos como pais, avós ou irmãos com câncer também não devem realizar este tipo de tratamento, assim como pessoas que utilizaram arsênico ou tiveram expostos à radiação ionizante, e em caso de catarata ou afaquia.<br><br></h3><br>
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/VEs08S7AQhU" frameborder="0" allowfullscreen></iframe><br><br><br><br>
+				<input class="btncadastrar" type="button" value="Marcar Consulta">
+				<br><br><br><br>
+
+		</center>
+		</div>
+		</div>
+
+
+		 
+            
+        <footer class="rodape ">
+          	<div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+         	</div>
+          	<p class="copyright">
+            Copyright © FisioForma 2017. Todos os direitos reservados.
+        </footer>       
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js" ></script>
+		<script>
+				
+				// cadastrar
+			$(".btncadastrar").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btn-closes").click(function(){
+				$(".cadastrar").hide();
+			});
+				
+			
+		</script>
+		
+	</body>
+</html>

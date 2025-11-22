@@ -1,0 +1,109 @@
+<?php
+	include 'php/ponte1.php';
+
+?>
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FisioForma - Marque suas consultas de um novo jeito.</title>
+		<link rel="stylesheet" type="text/css" href="css/pediatrica.css">
+		<link rel="icon"  href="img/fisioforma.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<header class="cabecalho">
+		<a href="index.html"> <h1 class="logo"> FisioForma - Marque suas consultas de um novo jeito.</h1></a>
+		<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul>
+				<li><a href="index2.php">Home</a></li>
+				
+				
+				
+				<li><a href="php/logout.php">SAIR</a></li>
+			</ul>
+
+		</header>
+		</nav>
+		
+		</header>
+		<nav class="cadastrar">
+			<a class="btn-closes"><i class="fa fa-times"></i></a>
+
+			<form method="POST" action="php/marcandopediatrica.php">
+			<ul>
+				<li class="title02">Marcar consulta</li>
+				<li><a href="#"><input type="text" name="nome" placeholder="Nome completo"></a></li>
+				<li><a href="#"><input type="text" name="idade" placeholder="Idade"></a></li>
+				<li><a href="#"><input type="text" name="rg" placeholder="Rg"></a></li>
+				<li><a href="#"><input type="text" name="endereco" placeholder="Endereço"></a></li>
+				<li><a href="#"><input type="text" name="cidade" placeholder="Cidade"></a></li>
+				<li><a href="#"><input type="text" name="estado" placeholder="Sigla do estado"></a></li>
+				<li><input class="data" type="date" name="da_ta" placeholder="Data da consulta"></li>
+				<li><input class="data" type="time" name="hora" placeholder="Hora da consulta"></li>
+				<button > cadastrar </button>
+				
+			</ul>
+			</form>
+		</header>
+		</nav>
+		<div class="banner"> 
+			<center><div class="title">
+
+				<h2>Fisioterapia Pediátrica</h2>
+				<br><br>
+				<h3>A Fisioterapia Pediátrica é o ramo da Fisioterapia que utiliza uma abordagem com base em técnicas neurológicas e cardiorrespiratórias especializadas, buscando integrar os objetivos fisioterápicos com atividades lúdicas e sociais, levando a criança a uma maior integração com sua família e a sociedade.
+ </h3><br>
+
+
+				<img src="img/pediatrica.jpg"><br><br>
+
+
+
+				<h3>Técnicas de fisioterapia respiratória pediátrica são muito utilizadas em unidades hospitalares, consultórios e em domicílio como tratamento coadjuvante de doenças pulmonares. Em unidades de terapia intensiva fazem parte do corpo clínico permanente e são profissionais altamente requisitados para a realização de alguns procedimentos como a aplicação da ventilação mecânica não invasiva - VMNI.<br><br>
+
+				A fisioterapia pediátrica conta com procedimentos específicos: alongamentos, exercícios e técnicas manuais que não obedecem a um padrão, elas são ajustáveis à necessidade de cada caso a ser trabalhado. Dependendo do quadro do tratamento também podem ser empregados alguns equipamentos para auxiliar no processo de reabilitação. Essa fisioterapia é também utilizada em muitas escolas com foco na prevenção de aspectos relacionados à postura, problemas físicos, além do estresse infantil.
+
+A duração do tratamento varia, vai depender de cada criança e das particularidades da própria patologia apresentada.<br><br></h3><br>
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/tCGdrzrnoBw" frameborder="0" allowfullscreen></iframe><br><br><br><br>
+				<input class="btncadastrar" type="button" value="Marcar Consulta">
+				<br><br><br><br>
+
+		</center>
+		</div>
+		</div>
+
+
+		 
+            
+        <footer class="rodape ">
+          	<div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+         	</div>
+          	<p class="copyright">
+            Copyright © FisioForma 2017. Todos os direitos reservados.
+        </footer>       
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js" ></script>
+		<script>
+				
+				// cadastrar
+			$(".btncadastrar").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btn-closes").click(function(){
+				$(".cadastrar").hide();
+			});
+			
+		</script>
+		
+	</body>
+</html>

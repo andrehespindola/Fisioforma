@@ -1,0 +1,102 @@
+<?php
+	include 'php/ponte1.php';
+
+?>
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FisioForma - Marque suas consultas de um novo jeito.</title>
+		<link rel="stylesheet" type="text/css" href="css/qualidadevida.css">
+		<link rel="icon"  href="img/fisioforma.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<header class="cabecalho">
+		<a href="index.html"> <h1 class="logo"> FisioForma - Marque suas consultas de um novo jeito.</h1></a>
+		<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul>
+				<li><a href="index2.php">Home</a></li>
+				
+				
+				
+				<li><a href="php/logout.php">SAIR</a></li>
+			</ul>
+
+		</header>
+		</nav>
+		
+		</header>
+		
+		<div class="banner"> 
+			<center><div class="title">
+<br><br><br>
+				<h2>10 Passos para Melhorar sua<br> Qualidade de Vida</h2>
+				<br><br>
+				<h3>Dados do Ministério da Saúde apontam que doenças associadas ao estilo de vida matam mais que o trânsito e a violência. Essas doenças normalmente estão relacionadas com o aparelho circulatório: infartos, derrames, diabetes e hipertensão, entre outras. A maior parte dos cânceres também é relacionada com estilo de vida.</h3><br>
+				<img src="img/qualidadevida.jpg"><BR><br>
+				<h3>Como Melhorar sua Qualidade de Vida?
+
+Veja abaixo algumas atitudes que podem ajudar a manter seu bem-estar físico e mental:<br><br>
+
+1-Mantenha a mente ativa: Pesquisas mostram que a doença de Alzheimer tem maior incidência entre as pessoas com baixo nível de instrução. Estudo publicado no New England Journal of Medicine relaciona a leitura, os jogos de cartas e de tabuleiro e as palavras cruzadas com a redução do risco de demência em pessoas com mais de 75 anos.<br><br>
+2-Respire mais profundamente.  O sangue precisa de oxigênio. A respiração profunda amplia a clareza da mente e dá mais saúde física. Faça isso calmamente durante alguns minutos do dia, preferencialmente em algum lugar com muito ar puro.<br><br>
+3-Faça exercícios físicos diariamente.  Caminhe, ande de bicicleta, faça um pouco de yoga, jogue vôlei, futebol, basquete, tênis. Exercícios físicos moderados são essenciais para manter a saúde e uma atitude equilibrada diante da vida, evitando as causas do estresse e tensão.<br><br>
+4-Saboreie um bom chocolate. Em pequenas quantidades, ele pode ser benéfico à saúde. Segundo estudo do King’s College, de Londres, a quantidade de flavonóides encontrada em 50 gramas de chocolate é equivalente à de seis maçãs, duas taças de vinho ou sete cebolas. Os flavonoides têm sido apontados como importantes armas no combate aos radicais livres.<br><br>
+5-Pratique meditação.  Considerada por alguns como instrumento para uma ecologia da mente e dos sentimentos, a meditação não é uma prática tão complicada quanto se pensa. Basta sentar-se em silêncio e observar a passagem dos pensamentos pela mente como se fossem nuvens do céu. Isto é, não se prenda a eles — apenas observe-os e deixe-os passar.<br><br>
+6-Tenha mais contato com a natureza.  Deixe de lado a tensão do trabalho urbano e visite os lugares da natureza. Esvazie-se da pressa e aprenda a ouvir a música e harmonia presentes no silêncio da natureza.<br><br>
+7-Durma bem.  Estudos sugerem que a falta de sono crônica pode ter um impacto negativo nas funções metabólicas e endócrinas. Quando se dorme menos de cinco horas, há um desequilíbrio no metabolismo.<br><br>
+8-Seja mais otimista.  Após dez anos estudando como a personalidade de uma pessoa pode influir no aumento ou na diminuição da expectativa de vida, pesquisadores holandeses concluíram que ter uma atitude positiva melhora o bem-estar e  diminui o risco de doenças.<br><br>
+9-Se alimente bem. Dê uma atenção especial ao momento das refeições. Prefira uma alimentação natural, evitando exagerar nas carnes vermelhas, que são de difícil digestão. Inclua doses de fibras, frutas e verduras no seu dia-a-dia. Evite comer muita fritura e doces. Cuidado com as quantidades, comer menos e mais vezes é a melhor solução.<br><br>
+10-Aceite sua vida.  Em primeiro lugar é importante deixar claro que aceitar não significa se acomodar e se conformar com situações que podem ser mudadas. Lute para melhorar o que estiver ao seu alcance, mas procure, ao mesmo tempo, ver o que existe de positivo em sua casa, sua família, sua cidade e em tudo mais que estiver à sua volta.</h3><br>
+		</center>
+		</div>
+		</div>
+
+
+		 
+            
+        <footer class="rodape ">
+          	<div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+         	</div>
+          	<p class="copyright">
+            Copyright © FisioForma 2017. Todos os direitos reservados.
+        </footer>       
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js" ></script>
+		<script>
+				// menu
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+				// cadastrar
+			$(".btn-cadastrar").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btn-closes").click(function(){
+				$(".cadastrar").hide();
+			});
+				// login
+			$(".btn-sobre").click(function(){
+				$(".login").show();
+			});
+			$(".btn-closess").click(function(){
+				$(".login").hide();
+			});
+			
+		</script>
+		
+	</body>
+</html>

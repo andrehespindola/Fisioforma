@@ -1,0 +1,116 @@
+<?php
+	include 'php/ponte1.php';
+
+?>
+<!DOCTYPE html>
+<html lang="pt-bt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FisioForma - Marque suas consultas de um novo jeito.</title>
+		<link rel="stylesheet" type="text/css" href="css/hidroterapia.css">
+		<link rel="icon"  href="img/fisioforma.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<header class="cabecalho">
+		<a href="index.html"> <h1 class="logo"> FisioForma - Marque suas consultas de um novo jeito.</h1></a>
+		<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i></a>
+			<ul>
+				<li><a href="index2.php">Home</a></li>
+				
+				
+				
+				<li><a href="php/logout.php">SAIR</a></li>
+			</ul>
+
+		</header>
+		</nav>
+		
+		</header>
+		<nav class="cadastrar">
+			<a class="btn-closes"><i class="fa fa-times"></i></a>
+
+			<form method="POST" action="php/marcandohidroterapia.php">
+			<ul>
+				<li class="title02">Marcar consulta</li>
+				<li><a href="#"><input type="text" name="nome" placeholder="Nome completo"></a></li>
+				<li><a href="#"><input type="text" name="idade" placeholder="Idade"></a></li>
+				<li><a href="#"><input type="text" name="rg" placeholder="Rg"></a></li>
+				<li><a href="#"><input type="text" name="endereco" placeholder="Endereço"></a></li>
+				<li><a href="#"><input type="text" name="cidade" placeholder="Cidade"></a></li>
+				<li><a href="#"><input type="text" name="estado" placeholder="Sigla do estado"></a></li>
+				<li><input class="data" type="date" name="da_ta" placeholder="Data da consulta"></li>
+				<li><input class="data" type="time" name="hora" placeholder="Hora da consulta"></li>
+				<button > cadastrar </button>
+				
+			</ul>
+			</form>
+		</header>
+		</nav>
+		<div class="banner"> 
+			<center><div class="title">
+
+				<h2>Hidroterapia</h2>
+				<br><br>
+				<h3>Hidroterapia – Fisioterapia Aquática é uma atividade terapêutica que consiste em utilizar os recursos de uma piscina preparada especificamente para este fim com medidas, profundidade, temperatura, ambiente externo e o mais importante, com um profissional especializado na atividade, um fisioterapeuta.</h3><br>
+				<img src="img/hidroterapia.jpg"><br><br>
+				<h3>Este é o profissional que está devidamente autorizado pela lei para utilizar os princípios físicos da água com o intuito de reabilitação física em pacientes com distúrbios diversos.
+
+A Fisioterapia Aquática destaca-se a cada dia devido aos resultados que podem ser mensurados em pesquisas científicas e ao alto grau técnico que os profissionais reabilitadores brasileiros atingiram.<br><br>
+
+
+Cresce também devido ao atual baixo custo de se construir piscinas e a tecnologia de aquecimento, assim como o hábito dos brasileiros de se relacionarem bem com a água usando-a em atividades lúdicas, esportivas e de lazer.
+
+Na Fisioterapia Aquática existem técnicas ortodoxas de tratamento como o Bad Ragaz e o Halliwick, mas também conta com um arsenal de novas técnicas e trabalhos corporais aquáticos que a cada dia ganha mais exaltação pela mídia devido a plasticidade harmonia e qualidade de vida que propicia aos praticantes.<br><br>
+
+
+Hoje os termos usados para hidroterapia são diversos, podendo ser reconhecida como, fisioterapia aquática, hidrocinesioterapia, piscina terapêutica, aquaterapia e outras. O crescimento parece ter sido maior que a assimilação das mudanças.<br><br>
+
+
+No Brasil aconteceu em Abril de 2007 o primeiro Congresso Brasileiro de Hidroterapia (Fisioterapia Aquática) que teve como um dos objetivos a resolução do termo ideal para nomear esta atividade.<br><br>
+
+
+A cada dia o reconhecimento da Fisioterapia Aquática é maior por parte da classe médica e a conduta de prescrever sessões com intuito exclusivo de reabilitação cresce paralelamente ao reconhecimento dos pacientes .Isto se dá pelo fato de na hidroterapia o profissional poder dar atenção apenas a um paciente de cada vez, o que não acontece nas sessões comuns de fisioterapia que são prescritas por médicos, especialmente de convênios médicos que pagam valores muito baixo ao profissional ou ao estabelecimento e estes são obrigados a atender muitos pacientes ao mesmo tempo em solo, o que não acontece com a Fisioterapia Aquática comumente, em instituições que visam qualidade em primeiro plano, apesar de existirem Fisioterapia Aquática em Grupo.</h3><br>
+				<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/BUAXt16tNl8" frameborder="0" allowfullscreen></iframe><br><br><br><br>
+
+				
+				<input class="btncadastrar" type="button" value="Marcar Consulta">
+				<br><br><br><br>
+
+		</center>
+		</div>
+		</div>
+
+
+		 
+            
+        <footer class="rodape ">
+          	<div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+         	</div>
+          	<p class="copyright">
+            Copyright © FisioForma 2017. Todos os direitos reservados.
+        </footer>       
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js" ></script>
+		<script>
+			
+				// cadastrar
+			$(".btncadastrar").click(function(){
+				$(".cadastrar").show();
+			});
+			$(".btn-closes").click(function(){
+				$(".cadastrar").hide();
+			});
+					</script>
+		
+	</body>
+</html>
