@@ -1,0 +1,448 @@
+/*===================RESET==============*/
+*{margin:0; padding: 0; font-size:100%; border:none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif;}
+body{background-color: #f5f5f5;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img{max-width: 100%;}
+/*cabecalho*/
+.cabecalho{
+	background:linear-gradient(to right,#3CB371,#00FA9A);
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+}
+
+.logo{
+
+	width: 56px;
+	height: 56px;
+	float: left;
+	background: url(../img/fisioforma3.png) center center/45px no-repeat;
+	font-size: 0;
+}
+.btn{
+
+	background-color: transparent;
+}
+.btn-menu{
+	width: 56px;
+	height: 56px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background:linear-gradient(to right,#2E8B57	,#2E8B57);
+}
+/*cadastrar*/
+.cadastrar{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+}
+.cadastrar ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.title02{
+	
+	width: 100%;
+	
+	color: #fff;
+}
+.cadastrar li {
+
+	padding: 1%;
+}
+.cadastrar li a {
+	border-radius: 50px;
+	font-size: 2em;
+	color: #fff;
+	padding: 1.5% 3%;
+}
+.cadastrar li a input{
+	text-align: center;
+	border-radius: 25px;
+}
+.cadastrar ul button{
+	height: 50px;
+	width: 40%;
+	border-radius: 25px;
+}
+.cadastrar ul button:hover{
+	cursor: pointer;
+}
+.btn-closes{
+	
+	font-size: 1.5em;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+.data{
+	padding: 2px;
+	height: 40px;
+	width: 24%;
+	border-radius: 25px;
+	margin-bottom: 5px;
+}
+/*logar*/
+.login{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+}
+.login ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.title02{
+	font-size: 1.5em;
+	width: 100%;
+	 
+	color: #fff;
+}
+.login li {
+
+	padding: 1.5%;
+}
+.login li a {
+	border-radius: 50px;
+	font-size: 2em;
+	color: #fff;
+	padding: 1.5% 3%;
+}
+.login li a input{
+	text-align: center;
+	border-radius: 25px;
+}
+.login ul button{
+	height: 50px;
+	width: 40%;
+	border-radius: 25px;
+}
+.login ul button:hover{
+	cursor: pointer;
+}
+.btn-closess{
+	font-size: 1.5em;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+/*menu*/
+
+.menu{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+}
+.btn-close{
+	font-size: 1.5em;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+.menu ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.menu li {
+	padding: 1.5%;
+}
+.menu li a {
+	font-size: 2em;
+	color: #fff;
+	padding: 1.5% 3%;
+}
+.menu li a:hover {
+	border:1px solid #3CB371 ;
+}
+/*banner*/
+.banner input{
+
+	font-weight: 700;
+	border-radius: 30px;
+	width: 40%;
+	height: 30px;
+	background:linear-gradient(to right,#3CB371,#00FA9A);
+}
+.title{
+	width: 100%;
+}
+.title h2{
+	font-size: 2.5em;
+	color: #130400;
+	font-weight: 700;
+}
+.title h3{
+	font-size: 1.5em;
+	color: #130400;
+}
+.buttons{
+	margin-top: 2%;
+	width: 100%;
+}
+.buttons i {
+	float: right;
+}
+.btn-cadastrar{
+	border:1px solid #2E8B57 ;
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	cursor: pointer;
+	padding: 5%;
+	border-radius: 7px;
+	background-color: #fff;
+	color:#2E8B57;
+}
+.btncadastrar{
+	cursor: pointer;
+}
+.btn-sobre{
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	cursor: pointer;
+	padding: 5%;
+	border-radius: 7px;
+	background-color: #3CB371;
+	color:#fff;
+	margin-top: 2%;
+}
+/*servicos*/
+.servicos{
+	width: 100%;
+	float: left;
+	padding: 3%;
+}
+.servico{
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	border-radius: 7px;
+	
+}
+.servico img{
+	border-radius: 7px 7px 0 0;
+}
+.inner{
+	padding: 7%;
+}
+.inner a {
+	font-size: 1.5em;
+	color: #130400;
+	font-weight: 700;
+}
+.inner h4 {
+	font-size: 1.2em;
+	color: #130400;
+	margin-top: 2%;
+}
+.inner p{
+	margin-top: 6%;
+	color: #130400;
+	line-height: 1.5em;
+}
+/*video*/
+.video{
+	width:100%; 
+	height:285px;
+}
+
+/*rodape*/
+.rodape{
+
+	width: 100%;
+	float: left;
+	padding: 3%  4%;
+	text-align: center;
+	background:linear-gradient(to right,#00FF7F,#00FA9A);
+
+}
+.social-icons a {
+	font-size: 1.5em;
+	color: black;
+	margin-right: 3%;
+}
+.social-icons a: last-child{
+	margin-right: 0;
+}
+.social-icons a:hover {
+	color: rgb(255,255,255);
+	
+}
+.copyright{
+	font-weight: 500;
+	margin-top: 2%;
+	color: black;
+}
+ 
+ /*smartphones*/
+ @media screen and (min-width: 480px){
+ 	.logo{
+ 		width: 270px;
+ 		background: url(../img/logo.png) ;
+ 		background-repeat: no-repeat;
+ 		background-size: cover;
+
+ 	}
+ 	.btn{
+ 		font-size: 2em;
+ 	}
+ }
+ /*tablets*/
+@media screen and (min-width: 768px) {
+.servico {
+	
+	width: 49%;
+	float: left;
+	margin-right: 2%;
+}
+.servico:nth-child(2){
+	margin-right: 0;
+}
+.newsletter h2{
+	font-size: 2em;
+}
+.newsletter h3{
+	font-size: 1.5em;
+}
+.newsletter input{
+	width: 70%;
+	padding: 2%;
+	float: left;
+	margin-right: 1%;
+}	
+.newsletter button{
+	width: 29%;
+	padding: 2%;
+	float: right;
+	margin-top: 0;
+}	
+.login ul button{
+	height: 50px;
+	width: 30%;
+	border-radius: 25px;
+}
+}
+/*tablets & deskops*/
+@media screen and (min-width: 960px) {
+	.title{
+
+		width: 100%;
+		
+		text-align: center;
+	}
+	.title h2{
+		font-size: 2.5em;
+	}
+	.title h3{
+		text-align: justify;
+		margin-left: 328px;
+		width: 52%;
+		font-size: 1.4em;
+	}
+	.title img{
+		 width: 51%;
+	}
+	.banner input{
+		width: 10%;
+	}
+	.buttons{
+		width: 30%;
+		float: right;
+		margin-top: 0;
+	}
+	.servico{
+		width: 32%;
+	}
+	.servico:nth-child(2){
+		margin-right: 2%;
+	}
+	.servico:nth-child(3){
+		margin-right: 0;
+	}
+	.video{
+		width: 560px;
+		height: 315px;
+	}
+	.cadastrar ul button{
+	height: 50px;
+	width: 25%;
+	border-radius: 25px;
+}
+.login ul button{
+	height: 50px;
+	width: 25%;
+	border-radius: 25px;
+}
+}
+/* wide screens*/
+@media screen and (min-width: 1280px) {
+	.btn-menu{
+		display: none;
+	}
+	.btn-close{
+		display: none;
+	}
+	
+	.logo{
+		margin-top: -30px;
+	}
+	.menu{
+		font-weight: bold;
+		width: auto;
+		height: 56px;
+		line-height: 5px;
+		float: right;
+		background-color:transparent;
+		display: block!important;
+		position: static;
+	}
+	.menu li{
+		padding: 0;
+		float: left;
+	}
+	.menu li a{
+		color: #130400;
+		font-size: 1.5em;
+		padding: 8px;
+	}
+	.menu li a:hover{
+		border:none;
+		color: #fff;
+	}
+	.cabecalho{
+		height: 45px;
+	}
+	.cadastrar ul button{
+	height: 50px;
+	width: 20%;
+	border-radius: 25px;
+}
+.login ul button{
+	height: 50px;
+	width: 20%;
+	border-radius: 25px;
+}
+}

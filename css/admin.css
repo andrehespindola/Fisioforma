@@ -1,0 +1,74 @@
+*{margin:0; padding: 0; font-size:100%; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif;}
+body{
+
+	margin: 0;
+}
+table{
+	margin-bottom: 10px;
+	border: 3px solid black;
+	width:55%;
+	padding: 1%;
+	display: inline-block;
+}
+.titulo{
+	text-align: center;
+	border: 2px solid black;
+}
+.titulo2{
+	padding: 3px;
+}
+.header2 h1{
+	font-weight: 700;
+	background:linear-gradient(to right,#3CB371,#00FA9A);
+	padding: 3%;
+	font-family: 'Lato';
+	color: black;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 1%;
+}
+.header h1{
+	font-weight: 700;
+	background:linear-gradient(to right,#3CB371,#00FA9A);
+	padding: 3%;
+	font-family: 'Lato';
+	color: black;
+	font-size: 1.5em;
+	text-align: center;
+}
+.txt2{
+	padding: 1%;
+	font-size: 1.5em;
+}
+.menu{
+	float: right;
+	
+}
+.menu{
+	margin-top: -5%;
+		font-weight: bold;
+		width: auto;
+		height: 56px;
+		line-height: 5px;
+		float: right;
+		background-color:transparent;
+		display: block!important;
+		position: static;
+	}
+	.menu li{
+		text-decoration: none;
+		padding: 0;
+		float: left;
+	}
+	.menu li a{
+		color: #130400;
+		font-size: 1.5em;
+		padding: 8px;
+	}
+	.menu li a:hover{
+		border:none;
+		color: #fff;
+	}
+.txt33{
+	margin-right: 8px;
+}
